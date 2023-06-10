@@ -8,6 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 #### `Parametros del Proyecto:`
 - React Functional Components y su reutilización.
 - Estructura de archivos y carpetas de React.
+- Hooks y useStatemen.
 - Propiedades fundamentales de #CSS para dominar flex & grid.
 - Fundamentos del Modelo CSS BEM.
 - Desde animaciones suaves y agradables hasta degradados complejos.
