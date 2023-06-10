@@ -13,6 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Fundamentos del Modelo CSS BEM.
 - Desde animaciones suaves y agradables hasta degradados complejos.
 - Consultas de medios perfectamente ubicadas para una capacidad de respuesta satisfactoria que cubre casi todos los dispositivos.
+- CRUD de Reservacion de Mesa.
 
 ## Available Scripts
 
