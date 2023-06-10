@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
 import { db } from '../firebase';
-import ReservationList from '../ReservationList';
 
 const ReservationForm = () => {
-const [name, setName] = useState('');
-const [date, setDate] = useState('');
-const [time, setTime] = useState('');
+    const [name, setName] = useState('');
+    const [date, setDate] = useState('');
+    const [time, setTime] = useState('');
 
-const handleSubmit = (e) => {
-    e.preventDefault();
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-    // Guardar la reserva en Firebase
-    db.collection('reservations')
+        // Guardar la reserva en Firebase
+        db.collection('reservations')
         .add({
             name,
             date,
@@ -35,17 +34,12 @@ const handleSubmit = (e) => {
         <form onSubmit={handleSubmit}>
             <label>
             Nombre:
-            <input 
-                type="text" 
-                value={name} 
-                onChange={(e) => setName(e.target.value)} required />
+            <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
             </label>
             <br />
             <label>
             Fecha:
-            <input type="date" 
-                value={date} 
-                onChange={(e) => setDate(e.target.value)} required />
+            <input type="date" value={date} onChange={(e) => setDate(e.target.value)} required />
             </label>
             <br />
             <label>
@@ -60,4 +54,3 @@ const handleSubmit = (e) => {
 };
 
 export default ReservationForm;
-

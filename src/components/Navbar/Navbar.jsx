@@ -1,28 +1,16 @@
 import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
-import ReservationForm from '../Reservation/ReservationForm'; // Corregir la ruta de importación
+
 
 import './Navbar.css';
 import images from '../../constants/images';
 
 
-
+    
 const Navbar = () => {
-const [toggleMenu, setToggleMenu] = useState(false);
-
-const Navbar = () => {
-    const handleReservation = () => {
-    
-        console.log('Mostrar formulario de reserva');
-        setToggleMenu(false); // Cerrar el menú desplegable si estaba abierto
-    
-        const reservationForm = (
-            <ReservationForm />
-        );
-    
-        console.log(reservationForm);
-    };
+        
+        const [toggleMenu, setToggleMenu] = useState(false);
     
     return (
         <nav className="app__navbar">
@@ -38,7 +26,7 @@ const Navbar = () => {
             </ul>
             <div className="app__navbar-login">
                 <a href='#login' className='p__opensans'>LogIn / Registro</a>
-                <button className='p__opensans' onClick={handleReservation}>Reserva</button>
+                <a href="/" className="p__opensans">Book Table</a>
 
             </div>
 
@@ -62,7 +50,7 @@ const Navbar = () => {
         </nav>
     );
 };
-};
+
 
 export default Navbar;
 
