@@ -1,10 +1,8 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-
 ### `Este diseño fue bajado de la pagina` 
 https://ui8.net/iqonicdesign/products/gericht-restaurant-website-ui-in-figma
+
+### `Deployment`
+https://create-react-app.dev/docs/deployment/#github-pages
 
 #### `Parametros del Proyecto:`
 - React Functional Components y su reutilización.
@@ -15,6 +13,10 @@ https://ui8.net/iqonicdesign/products/gericht-restaurant-website-ui-in-figma
 - Desde animaciones suaves y agradables hasta degradados complejos.
 - Consultas de medios perfectamente ubicadas para una capacidad de respuesta satisfactoria que cubre casi todos los dispositivos.
 - CRUD de Reservacion de Mesa.
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
