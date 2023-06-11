@@ -3,7 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-### `Este diseño fue bajado de la pagina` https://ui8.net/iqonicdesign/products/gericht-restaurant-website-ui-in-figma
+### `Este diseño fue bajado de la pagina` 
+https://ui8.net/iqonicdesign/products/gericht-restaurant-website-ui-in-figma
 
 #### `Parametros del Proyecto:`
 - React Functional Components y su reutilización.
