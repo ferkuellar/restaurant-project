@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
+import ReservationForm from './ReservationForm';
 
 
 import './Navbar.css';
 import images from '../../constants/images';
 
-
-    
 const Navbar = () => {
-        
-        const [toggleMenu, setToggleMenu] = useState(false);
+
+    const [toggleMenu, setToggleMenu] = useState(false);
+
+    const reservationForm = <ReservationForm />;
     
     return (
         <nav className="app__navbar">
@@ -27,15 +28,27 @@ const Navbar = () => {
             <div className="app__navbar-login">
                 <a href='#login' className='p__opensans'>LogIn / Registro</a>
                 <a href="/" className="p__opensans">Book Table</a>
-
+                <button className="p__opensans" onClick={reservationForm}>
+                    Book Table
+                </button>
             </div>
 
             <div className="app__navbar-smallscreen">
-                <GiHamburgerMenu color='#fff' fontSize={27} onClick={() => setToggleMenu(true)}/>
+                <GiHamburgerMenu 
+                    color='#fff' 
+                    fontSize={27} 
+                    onClick={() => setToggleMenu(true)}/>
 
                 {toggleMenu && (
                 <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
-                    <MdOutlineRestaurantMenu color='#fff' className='overlay_close' fontSize={27} onClick={() => setToggleMenu(false)}/>
+                    
+                    <MdOutlineRestaurantMenu 
+                    color='#fff' 
+                    className='overlay_close' 
+                    fontSize={27} 
+                    onClick={() => setToggleMenu(false)}
+                    />
+
                     <ul className="app__navbar-smallscreen_links">
                         <li className="p__opensans"><a href="#home">Home</a></li>
                         <li className="p__opensans"><a href="#about">Nosotros</a></li>
@@ -43,6 +56,7 @@ const Navbar = () => {
                         <li className="p__opensans"><a href="#awards">Premios</a></li>
                         <li className="p__opensans"><a href="#contact">Contacto</a></li>
                     </ul>
+
                 </div>
                 )}
 

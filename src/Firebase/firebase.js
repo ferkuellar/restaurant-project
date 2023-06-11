@@ -1,6 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 
+
 const firebaseConfig = {
     apiKey: "AIzaSyAvDmZ_sjPJJyyuYC_ZCuiTz-INjF8e3qI",
     authDomain: "crud-reservacion.firebaseapp.com",
@@ -13,3 +14,5 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 export const db = firebase.firestore();
+
+// Path: src\components\Navbar\ReservationForm.js

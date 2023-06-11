@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { db } from '../firebase';
+import { db } from '../../Firebase/firebase';
+
 
 const ReservationForm = () => {
     const [name, setName] = useState('');
     const [date, setDate] = useState('');
-    const [time, setTime] = useState('');
+    const [mail, setMail] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -14,13 +15,13 @@ const ReservationForm = () => {
         .add({
             name,
             date,
-            time,
+            mail,
         })
         .then(() => {
             // Limpia los campos del formulario después de guardar la reserva
             setName('');
             setDate('');
-            setTime('');
+            setMail('');
             console.log('Reserva guardada en Firebase.');
         })
         .catch((error) => {
@@ -44,7 +45,7 @@ const ReservationForm = () => {
             <br />
             <label>
             Hora:
-            <input type="time" value={time} onChange={(e) => setTime(e.target.value)} required />
+            <input type="mail" value={mail} onChange={(e) => setMail(e.target.value)} required />
             </label>
             <br />
             <button type="submit">Reservar mesa</button>
